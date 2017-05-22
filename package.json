@@ -1,0 +1,15 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "html": "cp views/* dist/",
+    "coffee": "coffee -c -w -o dist/js/ src/coffee/",
+    "sass": "sass -C --watch src/sass/:dist/css/",
+    "build":"fis3 release -w -L -d ~/Desktop/tomcat6-dev/webapps/monitor -r dist/",
+    "all": "npm run coffee & npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}
